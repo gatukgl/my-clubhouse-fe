@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+    <div className="float-right my-4 d-flex align-items-center">
+      <div
+        className="mr-5"
+        style={{ display: 'inline-block', fontSize: '2rem' }}
+      >
+        <a href="#">
+          <i className="far fa-calendar-alt" aria-hidden="true"></i>
         </a>
-      </header>
+      </div>
+
+      <div style={{ display: 'inline-block' }}>
+        <a type="button" href="http://www.google.com">
+          <img
+            className="rounded-full"
+            style={{ width: '40px', height: '40px' }}
+            src="https://www.w3schools.com/w3images/avatar5.png"
+            alt="Profile image"
+          />
+        </a>
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
